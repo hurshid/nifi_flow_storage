@@ -1408,8 +1408,8 @@
           "name" : "PublishJMS",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 1152.0,
-            "y" : -888.0
+            "x" : 1272.0,
+            "y" : -912.0
           },
           "properties" : {
             "character-set" : "UTF-8",
