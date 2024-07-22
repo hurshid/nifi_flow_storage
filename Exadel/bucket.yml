@@ -5,5 +5,7 @@ flows:
     author: anonymous, created: 1721652245632, flowName: JiraFlow, flowDesc: ''}
   69ac0ac9-cee4-4a55-9d01-34fb655e2763: {ver: 1, file: ConfluenceFlow.snapshot, comments: '',
     author: anonymous, created: 1721656616311, flowName: ConfluenceFlow, flowDesc: ''}
+  55b84e57-cf10-4acf-8dc3-36841d181a68: {ver: 1, file: GitlabFlow.snapshot, comments: '',
+    author: anonymous, created: 1721656667459, flowName: GitlabFlow, flowDesc: ''}
 layoutVer: 1
 bucketId: 8a82633b-f542-4f81-af0d-0978ca45a5a1
