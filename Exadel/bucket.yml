@@ -1,8 +1,6 @@
 flows:
   6f294acc-3fc5-4e4b-ab30-40f2909921f4: {ver: 2, file: BitbucketFlow.snapshot, comments: bitbucket,
     author: anonymous, created: 1721656439558, flowName: BitbucketFlow, flowDesc: ''}
-  f85d2a87-2e41-4a56-8bc2-9e691d3c2d02: {ver: 3, file: GitlabFlow.snapshot, comments: redis
-      configs, author: anonymous, created: 1721656233591, flowName: GitlabFlow, flowDesc: ''}
   1d668434-ca32-442b-aac7-4164163efdee: {ver: 2, file: JiraFlow.snapshot, comments: jira,
     author: anonymous, created: 1721652245632, flowName: JiraFlow, flowDesc: ''}
   69ac0ac9-cee4-4a55-9d01-34fb655e2763: {ver: 1, file: ConfluenceFlow.snapshot, comments: '',
