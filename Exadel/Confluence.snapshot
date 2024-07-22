@@ -505,7 +505,7 @@
               "name" : "cflib",
               "resourceDefinition" : {
                 "cardinality" : "MULTIPLE",
-                "resourceTypes" : [ "DIRECTORY", "FILE", "URL" ]
+                "resourceTypes" : [ "URL", "FILE", "DIRECTORY" ]
               },
               "sensitive" : false
             },
@@ -551,8 +551,8 @@
         "outputPorts" : [ ],
         "parameterContextName" : "Environment Variables",
         "position" : {
-          "x" : 232.0,
-          "y" : -128.0
+          "x" : 344.0,
+          "y" : -368.0
         },
         "processGroups" : [ ],
         "processors" : [ {
@@ -837,7 +837,7 @@
               "name" : "cflib",
               "resourceDefinition" : {
                 "cardinality" : "MULTIPLE",
-                "resourceTypes" : [ "DIRECTORY", "FILE", "URL" ]
+                "resourceTypes" : [ "URL", "FILE", "DIRECTORY" ]
               },
               "sensitive" : false
             },
@@ -897,7 +897,7 @@
               "name" : "naming.factory.libraries",
               "resourceDefinition" : {
                 "cardinality" : "MULTIPLE",
-                "resourceTypes" : [ "DIRECTORY", "FILE", "URL" ]
+                "resourceTypes" : [ "URL", "FILE", "DIRECTORY" ]
               },
               "sensitive" : false
             },
@@ -1113,7 +1113,7 @@
               "name" : "Custom Module Directory",
               "resourceDefinition" : {
                 "cardinality" : "MULTIPLE",
-                "resourceTypes" : [ "DIRECTORY", "FILE" ]
+                "resourceTypes" : [ "FILE", "DIRECTORY" ]
               },
               "sensitive" : false
             },
@@ -1131,7 +1131,7 @@
               "name" : "Jolt Specification",
               "resourceDefinition" : {
                 "cardinality" : "SINGLE",
-                "resourceTypes" : [ "TEXT", "FILE" ]
+                "resourceTypes" : [ "FILE", "TEXT" ]
               },
               "sensitive" : false
             }
@@ -1529,7 +1529,7 @@
           "properties" : {
             "groovyx-failure-strategy" : "transfer to failure",
             "groovyx-additional-classpath" : "/opt/nifi/nifi-current/activemq-lib/*",
-            "groovyx-script-file" : "/opt/nifi/nifi-current/scripts/validator.groovy"
+            "groovyx-script-file" : "/opt/nifi/nifi-current/scripts/confluence_validator.groovy"
           },
           "propertyDescriptors" : {
             "groovyx-script-body" : {
@@ -1733,10 +1733,20 @@
             "provided" : true,
             "sensitive" : true
           }, {
+            "name" : "GITLAB_PROJECT_NUMBER",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "12345"
+          }, {
             "name" : "NIFI_REDIS_HOST",
             "provided" : true,
             "sensitive" : false,
             "value" : "nifi-redis:6379"
+          }, {
+            "name" : "GITLAB_ACCESS_TOKEN",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "gitlab_access_token-here"
           }, {
             "name" : "CONFLUENCE_ACCESS_TOKEN",
             "provided" : true,
@@ -1757,9 +1767,24 @@
             "sensitive" : false,
             "value" : "UZES"
           }, {
+            "name" : "GITLAB_URL",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "https://git.exadel.com"
+          }, {
             "name" : "NIFI_REDIS_PASSWORD",
             "provided" : true,
             "sensitive" : true
+          }, {
+            "name" : "GITLAB_PROJECT_ID",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "first-gitlab-project"
+          }, {
+            "name" : "GITLAB_SCHEDULER_CRON",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "0 0 8 * * ?"
           } ],
           "synchronized" : true
         }
