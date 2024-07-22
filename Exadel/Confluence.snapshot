@@ -750,7 +750,7 @@
           "name" : "PublishJMS",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 1024.0,
+            "x" : 1400.0,
             "y" : -920.0
           },
           "properties" : {
