@@ -3,7 +3,7 @@ flows:
     created: 1721648403614, flowName: GitlabFlow, flowDesc: ''}
   1d668434-ca32-442b-aac7-4164163efdee: {ver: 1, file: JiraFlow.snapshot, author: anonymous,
     created: 1721648390556, flowName: JiraFlow, flowDesc: ''}
-  e578d07a-8c8c-44aa-880b-b65e7fa5d38c: {ver: 1, file: ConfluenceFlow.snapshot, author: anonymous,
-    created: 1721648410907, flowName: ConfluenceFlow, flowDesc: ''}
+  e578d07a-8c8c-44aa-880b-b65e7fa5d38c: {ver: 2, file: ConfluenceFlow.snapshot, comments: confluence,
+    author: anonymous, created: 1721652228259, flowName: ConfluenceFlow, flowDesc: ''}
 layoutVer: 1
 bucketId: 8a82633b-f542-4f81-af0d-0978ca45a5a1
