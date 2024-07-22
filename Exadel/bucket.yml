@@ -1,8 +1,6 @@
 flows:
   57925103-ad99-4a0f-94e3-dbc855433069: {ver: 1, file: GitlabFlow.snapshot, author: anonymous,
     created: 1721647613891, flowName: GitlabFlow, flowDesc: ''}
-  82042286-a8e2-4860-ae92-03f52871fd37: {ver: 1, file: ConfluenceFlow.snapshot, author: anonymous,
-    created: 1721647588909, flowName: ConfluenceFlow, flowDesc: ''}
   e252061d-057c-4115-8a07-e153b1c4dd77: {ver: 1, file: JiraFlow.snapshot, author: anonymous,
     created: 1721647598868, flowName: JiraFlow, flowDesc: ''}
 layoutVer: 1
