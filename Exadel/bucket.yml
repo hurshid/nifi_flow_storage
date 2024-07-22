@@ -1,8 +1,6 @@
 flows:
   e13ecca0-4345-4dfd-861f-ac698db8b499: {ver: 2, file: GitlabFlow.snapshot, comments: gitlab
       changed, author: anonymous, created: 1721640255098, flowName: GitlabFlow, flowDesc: ''}
-  cbaee751-5f8e-48c8-830c-e2cbdc4097fd: {ver: 7, file: Confluence.snapshot, comments: '',
-    author: anonymous, created: 1721642499834, flowName: Confluence, flowDesc: ''}
   794b433c-b4f3-49d1-ade7-7f1fb7bb70ff: {ver: 3, file: JiraFlow.snapshot, comments: Update
       from Utkir, author: anonymous, created: 1721641728988, flowName: JiraFlow, flowDesc: ''}
 layoutVer: 1
