@@ -492,7 +492,7 @@
         "maxConcurrentTasks" : 1,
         "name" : "Confluence_NiFi_Flow",
         "outputPorts" : [ ],
-        "parameterContextName" : "Environment Variables",
+        "parameterContextName" : "Environment Variables ALL",
         "position" : {
           "x" : 344.0,
           "y" : -368.0
@@ -750,8 +750,8 @@
           "name" : "PublishJMS",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 1184.0,
-            "y" : -872.0
+            "x" : 1024.0,
+            "y" : -920.0
           },
           "properties" : {
             "character-set" : "UTF-8",
@@ -1636,10 +1636,10 @@
       },
       "flowEncodingVersion" : "1.0",
       "parameterContexts" : {
-        "Environment Variables" : {
+        "Environment Variables ALL" : {
           "componentType" : "PARAMETER_CONTEXT",
           "inheritedParameterContexts" : [ ],
-          "name" : "Environment Variables",
+          "name" : "Environment Variables ALL",
           "parameterGroupName" : "Environment Variables",
           "parameterProvider" : "d99f15fc-0190-1000-dc9e-db70834f5c70",
           "parameters" : [ {
