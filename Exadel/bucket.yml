@@ -1,4 +1,6 @@
 flows:
+  f85d2a87-2e41-4a56-8bc2-9e691d3c2d02: {ver: 1, file: GitlabFlow.snapshot, author: anonymous,
+    created: 1721648403614, flowName: GitlabFlow, flowDesc: ''}
   1d668434-ca32-442b-aac7-4164163efdee: {ver: 1, file: JiraFlow.snapshot, author: anonymous,
     created: 1721648390556, flowName: JiraFlow, flowDesc: ''}
 layoutVer: 1
