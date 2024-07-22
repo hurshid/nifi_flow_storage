@@ -494,8 +494,8 @@
         "outputPorts" : [ ],
         "parameterContextName" : "Environment Variables ALL",
         "position" : {
-          "x" : 344.0,
-          "y" : -368.0
+          "x" : 328.0,
+          "y" : -632.0
         },
         "processGroups" : [ ],
         "processors" : [ {
@@ -750,8 +750,8 @@
           "name" : "PublishJMS",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 1400.0,
-            "y" : -920.0
+            "x" : 1184.0,
+            "y" : -896.0
           },
           "properties" : {
             "character-set" : "UTF-8",
