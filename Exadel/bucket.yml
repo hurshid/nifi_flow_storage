@@ -4,8 +4,7 @@ flows:
   cbaee751-5f8e-48c8-830c-e2cbdc4097fd: {ver: 6, file: Confluence.snapshot, comments: confluence
       updated just now, author: anonymous, created: 1721641115555, flowName: Confluence,
     flowDesc: ''}
-  794b433c-b4f3-49d1-ade7-7f1fb7bb70ff: {ver: 2, file: JiraFlow.snapshot, comments: jira
-      flow reconfigured, author: anonymous, created: 1721637032771, flowName: JiraFlow,
-    flowDesc: ''}
+  794b433c-b4f3-49d1-ade7-7f1fb7bb70ff: {ver: 3, file: JiraFlow.snapshot, comments: Update
+      from Utkir, author: anonymous, created: 1721641728988, flowName: JiraFlow, flowDesc: ''}
 layoutVer: 1
 bucketId: 8a82633b-f542-4f81-af0d-0978ca45a5a1
