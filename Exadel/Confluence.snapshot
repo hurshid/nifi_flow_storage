@@ -4,7 +4,12 @@
   },
   "content" : {
     "flowSnapshot" : {
-      "externalControllerServices" : { },
+      "externalControllerServices" : {
+        "00fb0b66-950c-3e5c-be6c-08c7a589e4d0" : {
+          "identifier" : "00fb0b66-950c-3e5c-be6c-08c7a589e4d0",
+          "name" : "JMSConnectionFactoryProviderALL"
+        }
+      },
       "flowContents" : {
         "comments" : "",
         "componentType" : "PROCESS_GROUP",
@@ -471,69 +476,7 @@
           },
           "zIndex" : 0
         } ],
-        "controllerServices" : [ {
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-jms-processors-nar",
-            "group" : "org.apache.nifi",
-            "version" : "2.0.0-M4"
-          },
-          "comments" : "",
-          "componentType" : "CONTROLLER_SERVICE",
-          "controllerServiceApis" : [ {
-            "bundle" : {
-              "artifact" : "nifi-jms-cf-service-nar",
-              "group" : "org.apache.nifi",
-              "version" : "2.0.0-M4"
-            },
-            "type" : "org.apache.nifi.jms.cf.JMSConnectionFactoryProviderDefinition"
-          } ],
-          "groupIdentifier" : "450a7023-6256-346a-9f71-aea65216d9d8",
-          "identifier" : "200631f3-4280-3bd6-9a8e-627a9823fefe",
-          "instanceIdentifier" : "fdb785ba-0121-30e9-9d88-c45994b71a3e",
-          "name" : "JMSConnectionFactoryProvider",
-          "properties" : {
-            "cflib" : "/opt/nifi/nifi-current/activemq-lib",
-            "cf" : "org.apache.activemq.ActiveMQConnectionFactory",
-            "broker" : "#{ACTIVEMQ_URI}"
-          },
-          "propertyDescriptors" : {
-            "cflib" : {
-              "displayName" : "JMS Client Libraries",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "cflib",
-              "resourceDefinition" : {
-                "cardinality" : "MULTIPLE",
-                "resourceTypes" : [ "URL", "FILE", "DIRECTORY" ]
-              },
-              "sensitive" : false
-            },
-            "SSL Context Service" : {
-              "displayName" : "JMS SSL Context Service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "SSL Context Service",
-              "sensitive" : false
-            },
-            "cf" : {
-              "displayName" : "JMS Connection Factory Implementation Class",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "cf",
-              "sensitive" : false
-            },
-            "broker" : {
-              "displayName" : "JMS Broker URI",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "broker",
-              "sensitive" : false
-            }
-          },
-          "scheduledState" : "DISABLED",
-          "type" : "org.apache.nifi.jms.cf.JMSConnectionFactoryProvider"
-        } ],
+        "controllerServices" : [ ],
         "defaultBackPressureDataSizeThreshold" : "1 GB",
         "defaultBackPressureObjectThreshold" : 10000,
         "defaultFlowFileExpiration" : "0 sec",
@@ -815,7 +758,7 @@
             "allow-illegal-chars-in-jms-header-names" : "false",
             "User Name" : "#{ACTIVEMQ_USERNAME}",
             "Destination Name" : "#{ACTIVEMQ_QUEUE_NAME}",
-            "Connection Factory Service" : "200631f3-4280-3bd6-9a8e-627a9823fefe",
+            "Connection Factory Service" : "00fb0b66-950c-3e5c-be6c-08c7a589e4d0",
             "attributes-to-send-as-jms-headers-regex" : ".*",
             "Connection Client ID" : "1234",
             "Destination Type" : "QUEUE",
@@ -1698,83 +1641,232 @@
           "inheritedParameterContexts" : [ ],
           "name" : "Environment Variables",
           "parameterGroupName" : "Environment Variables",
-          "parameterProvider" : "7cb58ee3-018f-1000-0000-000021ba1be5",
+          "parameterProvider" : "d99f15fc-0190-1000-dc9e-db70834f5c70",
           "parameters" : [ {
+            "name" : "NIFI_TOOLKIT_HOME",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "/opt/nifi/nifi-toolkit-current"
+          }, {
+            "name" : "NIFI_CLUSTER_IS_NODE",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "true"
+          }, {
             "name" : "CONFLUENCE_SCHEDULER_CRON",
             "provided" : true,
             "sensitive" : false,
             "value" : "0 0 8 * * ?"
-          }, {
-            "name" : "RESOURCE_STORAGE_FOLDER",
-            "provided" : true,
-            "sensitive" : false,
-            "value" : "/temp_source_storage"
           }, {
             "name" : "CONFLUENCE_PROJECT_ID",
             "provided" : true,
             "sensitive" : false,
             "value" : "first-confluence-project"
           }, {
-            "name" : "ACTIVEMQ_PASSWORD",
-            "provided" : true,
-            "sensitive" : true
-          }, {
             "name" : "ACTIVEMQ_USERNAME",
             "provided" : true,
             "sensitive" : false,
             "value" : "artemis_user"
           }, {
-            "name" : "CONFLUENCE_URL",
-            "provided" : true,
-            "sensitive" : false,
-            "value" : "https://exadel.atlassian.net/wiki"
-          }, {
             "name" : "CONFLUENCE_USERNAME",
             "provided" : true,
             "sensitive" : true
           }, {
-            "name" : "GITLAB_PROJECT_NUMBER",
+            "name" : "OLDPWD",
             "provided" : true,
             "sensitive" : false,
-            "value" : "12345"
+            "value" : "/opt/nifi/nifi-current/bin"
           }, {
-            "name" : "NIFI_REDIS_HOST",
+            "name" : "NIFI_LOG_DIR",
             "provided" : true,
             "sensitive" : false,
-            "value" : "nifi-redis:6379"
+            "value" : "/opt/nifi/nifi-current/logs"
           }, {
-            "name" : "GITLAB_ACCESS_TOKEN",
+            "name" : "NIFI_ELECTION_MAX_WAIT",
             "provided" : true,
             "sensitive" : false,
-            "value" : "gitlab_access_token-here"
+            "value" : "30 sec"
+          }, {
+            "name" : "LANGUAGE",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "en_US:en"
+          }, {
+            "name" : "JIRA_USER",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "xurshid.djurayev@gmail.com"
           }, {
             "name" : "CONFLUENCE_ACCESS_TOKEN",
             "provided" : true,
             "sensitive" : true
+          }, {
+            "name" : "JIRA_TOKEN",
+            "provided" : true,
+            "sensitive" : true
+          }, {
+            "name" : "HOSTNAME",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "nifi"
+          }, {
+            "name" : "SINGLE_USER_CREDENTIALS_PASSWORD",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "P@ssword_Admin_123"
           }, {
             "name" : "ACTIVEMQ_QUEUE_NAME",
             "provided" : true,
             "sensitive" : false,
             "value" : "SDLC::sdlc-queue"
           }, {
-            "name" : "ACTIVEMQ_URI",
+            "name" : "NIFI_PID_DIR",
             "provided" : true,
             "sensitive" : false,
-            "value" : "tcp://sdlc-activemq:61616"
+            "value" : "/opt/nifi/nifi-current/run"
           }, {
             "name" : "CONFLUENCE_SPACE_KEY",
             "provided" : true,
             "sensitive" : false,
             "value" : "UZES"
           }, {
+            "name" : "ACTIVEMQ_URI",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "tcp://sdlc-activemq:61616"
+          }, {
+            "name" : "NIFI_REDIS_PASSWORD",
+            "provided" : true,
+            "sensitive" : true
+          }, {
+            "name" : "SHLVL",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "1"
+          }, {
+            "name" : "HOME",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "/home/nifi"
+          }, {
+            "name" : "PATH",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "/usr/lib/jvm/jdk-21.0.3-bellsoft-x86_64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+          }, {
+            "name" : "FLOW_FILE",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "custom-flows/flow.json.gz"
+          }, {
+            "name" : "RESOURCE_STORAGE_FOLDER",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "/temp_source_storage"
+          }, {
+            "name" : "ACTIVEMQ_PASSWORD",
+            "provided" : true,
+            "sensitive" : true
+          }, {
+            "name" : "CONFLUENCE_URL",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "https://exadel.atlassian.net/wiki"
+          }, {
+            "name" : "GITLAB_PROJECT_NUMBER",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "980"
+          }, {
+            "name" : "NIFI_WEB_HTTPS_PORT",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "8443"
+          }, {
+            "name" : "JIRA_PROJECT_ID",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "first-jira-project"
+          }, {
+            "name" : "NIFI_REDIS_HOST",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "nifi-redis:6379"
+          }, {
+            "name" : "NIFI_HOME",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "/opt/nifi/nifi-current"
+          }, {
+            "name" : "LANG",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "en_US.UTF-8"
+          }, {
+            "name" : "JAVA_HOME",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "/usr/lib/jvm/jdk-21.0.3-bellsoft-x86_64"
+          }, {
+            "name" : "NIFI_BASE_DIR",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "/opt/nifi"
+          }, {
+            "name" : "GITLAB_ACCESS_TOKEN",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "glpat-zLTBttNrTTCKg_j-nfJe"
+          }, {
+            "name" : "JIRA_SCHEDULER_CRON",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "0 0 8 * * ?"
+          }, {
+            "name" : "NIFI_JVM_DEBUGGER",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "false"
+          }, {
+            "name" : "NIFI_SENSITIVE_PROPS_KEY",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "'12345678901234567890A'"
+          }, {
+            "name" : "JIRA_URL",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "https://khurshid.atlassian.net"
+          }, {
+            "name" : "SINGLE_USER_CREDENTIALS_USERNAME",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "admin"
+          }, {
+            "name" : "PWD",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "/opt/nifi/nifi-current"
+          }, {
+            "name" : "NIFI_ZK_CONNECT_STRING",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "zookeeper:2181"
+          }, {
             "name" : "GITLAB_URL",
             "provided" : true,
             "sensitive" : false,
             "value" : "https://git.exadel.com"
           }, {
-            "name" : "NIFI_REDIS_PASSWORD",
+            "name" : "NIFI_CLUSTER_NODE_PROTOCOL_PORT",
             "provided" : true,
-            "sensitive" : true
+            "sensitive" : false,
+            "value" : "8082"
+          }, {
+            "name" : "_",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "bin/nifi.sh"
           }, {
             "name" : "GITLAB_PROJECT_ID",
             "provided" : true,
@@ -1790,13 +1882,13 @@
         }
       },
       "parameterProviders" : {
-        "7cb58ee3-018f-1000-0000-000021ba1be5" : {
+        "d99f15fc-0190-1000-dc9e-db70834f5c70" : {
           "bundle" : {
             "artifact" : "nifi-standard-nar",
             "group" : "org.apache.nifi",
             "version" : "2.0.0-M4"
           },
-          "identifier" : "7cb58ee3-018f-1000-0000-000021ba1be5",
+          "identifier" : "d99f15fc-0190-1000-dc9e-db70834f5c70",
           "name" : "EnvironmentVariableParameterProvider",
           "type" : "org.apache.nifi.parameter.EnvironmentVariableParameterProvider"
         }
