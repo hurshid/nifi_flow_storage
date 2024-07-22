@@ -5,6 +5,10 @@
   "content" : {
     "flowSnapshot" : {
       "externalControllerServices" : {
+        "29394f31-0df3-38d6-aaf7-afcdfe7bbb7f" : {
+          "identifier" : "29394f31-0df3-38d6-aaf7-afcdfe7bbb7f",
+          "name" : "RedisDistributedMapCacheClientService"
+        },
         "00fb0b66-950c-3e5c-be6c-08c7a589e4d0" : {
           "identifier" : "00fb0b66-950c-3e5c-be6c-08c7a589e4d0",
           "name" : "JMSConnectionFactoryProviderALL"
@@ -713,263 +717,7 @@
           },
           "zIndex" : 0
         } ],
-        "controllerServices" : [ {
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-redis-nar",
-            "group" : "org.apache.nifi",
-            "version" : "2.0.0-M4"
-          },
-          "comments" : "",
-          "componentType" : "CONTROLLER_SERVICE",
-          "controllerServiceApis" : [ {
-            "bundle" : {
-              "artifact" : "nifi-redis-service-api-nar",
-              "group" : "org.apache.nifi",
-              "version" : "2.0.0-M4"
-            },
-            "type" : "org.apache.nifi.redis.RedisConnectionPool"
-          } ],
-          "groupIdentifier" : "87ff257f-5c5a-3d84-bfce-d5d9b036624a",
-          "identifier" : "11cb935b-bf70-3431-9a24-5e52562b5afc",
-          "instanceIdentifier" : "074a61ff-1073-3d0c-4f77-1dca64df1930",
-          "name" : "RedisConnectionPoolService",
-          "properties" : {
-            "Pool - Min Evictable Idle Time" : "60 seconds",
-            "Pool - Test On Borrow" : "false",
-            "Pool - Test On Return" : "false",
-            "Redis Mode" : "Standalone",
-            "Pool - Max Idle" : "8",
-            "Pool - Block When Exhausted" : "true",
-            "Cluster Max Redirects" : "5",
-            "Pool - Num Tests Per Eviction Run" : "-1",
-            "Connection String" : "#{NIFI_REDIS_HOST}",
-            "Pool - Max Total" : "8",
-            "Pool - Test On Create" : "false",
-            "Pool - Min Idle" : "0",
-            "Pool - Test While Idle" : "true",
-            "Pool - Time Between Eviction Runs" : "30 seconds",
-            "Communication Timeout" : "10 seconds",
-            "Pool - Max Wait Time" : "10 seconds",
-            "Database Index" : "0",
-            "Password" : "#{NIFI_REDIS_PASSWORD}"
-          },
-          "propertyDescriptors" : {
-            "Pool - Min Evictable Idle Time" : {
-              "displayName" : "Pool - Min Evictable Idle Time",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Pool - Min Evictable Idle Time",
-              "sensitive" : false
-            },
-            "Pool - Test On Borrow" : {
-              "displayName" : "Pool - Test On Borrow",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Pool - Test On Borrow",
-              "sensitive" : false
-            },
-            "Pool - Test On Return" : {
-              "displayName" : "Pool - Test On Return",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Pool - Test On Return",
-              "sensitive" : false
-            },
-            "Redis Mode" : {
-              "displayName" : "Redis Mode",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Redis Mode",
-              "sensitive" : false
-            },
-            "Pool - Max Idle" : {
-              "displayName" : "Pool - Max Idle",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Pool - Max Idle",
-              "sensitive" : false
-            },
-            "Pool - Block When Exhausted" : {
-              "displayName" : "Pool - Block When Exhausted",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Pool - Block When Exhausted",
-              "sensitive" : false
-            },
-            "Cluster Max Redirects" : {
-              "displayName" : "Cluster Max Redirects",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Cluster Max Redirects",
-              "sensitive" : false
-            },
-            "Pool - Num Tests Per Eviction Run" : {
-              "displayName" : "Pool - Num Tests Per Eviction Run",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Pool - Num Tests Per Eviction Run",
-              "sensitive" : false
-            },
-            "Connection String" : {
-              "displayName" : "Connection String",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Connection String",
-              "sensitive" : false
-            },
-            "Pool - Max Total" : {
-              "displayName" : "Pool - Max Total",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Pool - Max Total",
-              "sensitive" : false
-            },
-            "Pool - Test On Create" : {
-              "displayName" : "Pool - Test On Create",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Pool - Test On Create",
-              "sensitive" : false
-            },
-            "SSL Context Service" : {
-              "displayName" : "SSL Context Service",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "SSL Context Service",
-              "sensitive" : false
-            },
-            "Sentinel Username" : {
-              "displayName" : "Sentinel Username",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Sentinel Username",
-              "sensitive" : false
-            },
-            "Pool - Min Idle" : {
-              "displayName" : "Pool - Min Idle",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Pool - Min Idle",
-              "sensitive" : false
-            },
-            "Username" : {
-              "displayName" : "Username",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Username",
-              "sensitive" : false
-            },
-            "Sentinel Password" : {
-              "displayName" : "Sentinel Password",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Sentinel Password",
-              "sensitive" : true
-            },
-            "Pool - Test While Idle" : {
-              "displayName" : "Pool - Test While Idle",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Pool - Test While Idle",
-              "sensitive" : false
-            },
-            "Pool - Time Between Eviction Runs" : {
-              "displayName" : "Pool - Time Between Eviction Runs",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Pool - Time Between Eviction Runs",
-              "sensitive" : false
-            },
-            "Communication Timeout" : {
-              "displayName" : "Communication Timeout",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Communication Timeout",
-              "sensitive" : false
-            },
-            "Pool - Max Wait Time" : {
-              "displayName" : "Pool - Max Wait Time",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Pool - Max Wait Time",
-              "sensitive" : false
-            },
-            "Database Index" : {
-              "displayName" : "Database Index",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Database Index",
-              "sensitive" : false
-            },
-            "Sentinel Master" : {
-              "displayName" : "Sentinel Master",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Sentinel Master",
-              "sensitive" : false
-            },
-            "Password" : {
-              "displayName" : "Password",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "Password",
-              "sensitive" : true
-            }
-          },
-          "scheduledState" : "DISABLED",
-          "type" : "org.apache.nifi.redis.service.RedisConnectionPoolService"
-        }, {
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-redis-nar",
-            "group" : "org.apache.nifi",
-            "version" : "2.0.0-M4"
-          },
-          "comments" : "",
-          "componentType" : "CONTROLLER_SERVICE",
-          "controllerServiceApis" : [ {
-            "bundle" : {
-              "artifact" : "nifi-standard-services-api-nar",
-              "group" : "org.apache.nifi",
-              "version" : "2.0.0-M4"
-            },
-            "type" : "org.apache.nifi.distributed.cache.client.DistributedMapCacheClient"
-          }, {
-            "bundle" : {
-              "artifact" : "nifi-standard-services-api-nar",
-              "group" : "org.apache.nifi",
-              "version" : "2.0.0-M4"
-            },
-            "type" : "org.apache.nifi.distributed.cache.client.AtomicDistributedMapCacheClient"
-          } ],
-          "groupIdentifier" : "87ff257f-5c5a-3d84-bfce-d5d9b036624a",
-          "identifier" : "615b9a40-cba8-3c52-9664-73249a02aaa2",
-          "instanceIdentifier" : "2d2f1b2e-737e-37af-f584-3b9928bc9805",
-          "name" : "RedisDistributedMapCacheClientServiceAll",
-          "properties" : {
-            "redis-connection-pool" : "11cb935b-bf70-3431-9a24-5e52562b5afc",
-            "redis-cache-ttl" : "0 secs"
-          },
-          "propertyDescriptors" : {
-            "redis-connection-pool" : {
-              "displayName" : "Redis Connection Pool",
-              "dynamic" : false,
-              "identifiesControllerService" : true,
-              "name" : "redis-connection-pool",
-              "sensitive" : false
-            },
-            "redis-cache-ttl" : {
-              "displayName" : "TTL",
-              "dynamic" : false,
-              "identifiesControllerService" : false,
-              "name" : "redis-cache-ttl",
-              "sensitive" : false
-            }
-          },
-          "scheduledState" : "DISABLED",
-          "type" : "org.apache.nifi.redis.service.RedisDistributedMapCacheClientService"
-        } ],
+        "controllerServices" : [ ],
         "defaultBackPressureDataSizeThreshold" : "1 GB",
         "defaultBackPressureObjectThreshold" : 10000,
         "defaultFlowFileExpiration" : "0 sec",
@@ -985,7 +733,7 @@
         "maxConcurrentTasks" : 1,
         "name" : "Gitlab_NiFi_Flow",
         "outputPorts" : [ ],
-        "parameterContextName" : "Environment Variables ALL",
+        "parameterContextName" : "EnvironmentVariablesAll",
         "position" : {
           "x" : -6256.0,
           "y" : -3608.0
@@ -1740,7 +1488,7 @@
             "scheduledState" : "ENABLED",
             "type" : "OUTPUT_PORT"
           } ],
-          "parameterContextName" : "Environment Variables ALL",
+          "parameterContextName" : "EnvironmentVariablesAll",
           "position" : {
             "x" : 112.0,
             "y" : -1112.0
@@ -2578,7 +2326,7 @@
               "scheduledState" : "ENABLED",
               "type" : "OUTPUT_PORT"
             } ],
-            "parameterContextName" : "Environment Variables ALL",
+            "parameterContextName" : "EnvironmentVariablesAll",
             "position" : {
               "x" : 1128.0,
               "y" : -632.0
@@ -4917,7 +4665,7 @@
               "scheduledState" : "ENABLED",
               "type" : "OUTPUT_PORT"
             } ],
-            "parameterContextName" : "Environment Variables ALL",
+            "parameterContextName" : "EnvironmentVariablesAll",
             "position" : {
               "x" : -672.0,
               "y" : -600.0
@@ -7137,7 +6885,7 @@
           },
           "properties" : {
             "Cache Entry Identifier" : "gitlab-last-commit",
-            "Distributed Cache Service" : "615b9a40-cba8-3c52-9664-73249a02aaa2",
+            "Distributed Cache Service" : "29394f31-0df3-38d6-aaf7-afcdfe7bbb7f",
             "Max Length To Put In Attribute" : "256",
             "Character Set" : "UTF-8"
           },
@@ -7674,7 +7422,7 @@
               "name" : "cflib",
               "resourceDefinition" : {
                 "cardinality" : "MULTIPLE",
-                "resourceTypes" : [ "URL", "FILE", "DIRECTORY" ]
+                "resourceTypes" : [ "DIRECTORY", "URL", "FILE" ]
               },
               "sensitive" : false
             },
@@ -7734,7 +7482,7 @@
               "name" : "naming.factory.libraries",
               "resourceDefinition" : {
                 "cardinality" : "MULTIPLE",
-                "resourceTypes" : [ "URL", "FILE", "DIRECTORY" ]
+                "resourceTypes" : [ "DIRECTORY", "URL", "FILE" ]
               },
               "sensitive" : false
             },
@@ -8064,7 +7812,7 @@
           "properties" : {
             "Cache Entry Identifier" : "gitlab-last-commit",
             "Cache update strategy" : "replace",
-            "Distributed Cache Service" : "615b9a40-cba8-3c52-9664-73249a02aaa2",
+            "Distributed Cache Service" : "29394f31-0df3-38d6-aaf7-afcdfe7bbb7f",
             "Max cache entry size" : "1 MB"
           },
           "propertyDescriptors" : {
@@ -8629,10 +8377,10 @@
       },
       "flowEncodingVersion" : "1.0",
       "parameterContexts" : {
-        "Environment Variables ALL" : {
+        "EnvironmentVariablesAll" : {
           "componentType" : "PARAMETER_CONTEXT",
           "inheritedParameterContexts" : [ ],
-          "name" : "Environment Variables ALL",
+          "name" : "EnvironmentVariablesAll",
           "parameterGroupName" : "Environment Variables",
           "parameterProvider" : "d99f15fc-0190-1000-dc9e-db70834f5c70",
           "parameters" : [ {
@@ -8646,34 +8394,14 @@
             "sensitive" : false,
             "value" : "true"
           }, {
-            "name" : "CONFLUENCE_SCHEDULER_CRON",
-            "provided" : true,
-            "sensitive" : false,
-            "value" : "0 0 8 * * ?"
-          }, {
             "name" : "CONFLUENCE_PROJECT_ID",
             "provided" : true,
             "sensitive" : false,
             "value" : "first-confluence-project"
           }, {
-            "name" : "ACTIVEMQ_USERNAME",
-            "provided" : true,
-            "sensitive" : false,
-            "value" : "artemis_user"
-          }, {
             "name" : "CONFLUENCE_USERNAME",
             "provided" : true,
             "sensitive" : true
-          }, {
-            "name" : "OLDPWD",
-            "provided" : true,
-            "sensitive" : false,
-            "value" : "/opt/nifi/nifi-current/bin"
-          }, {
-            "name" : "NIFI_LOG_DIR",
-            "provided" : true,
-            "sensitive" : false,
-            "value" : "/opt/nifi/nifi-current/logs"
           }, {
             "name" : "NIFI_ELECTION_MAX_WAIT",
             "provided" : true,
@@ -8684,11 +8412,6 @@
             "provided" : true,
             "sensitive" : false,
             "value" : "en_US:en"
-          }, {
-            "name" : "JIRA_USER",
-            "provided" : true,
-            "sensitive" : false,
-            "value" : "xurshid.djurayev@gmail.com"
           }, {
             "name" : "CONFLUENCE_ACCESS_TOKEN",
             "provided" : true,
@@ -8713,11 +8436,6 @@
             "sensitive" : false,
             "value" : "SDLC::sdlc-queue"
           }, {
-            "name" : "NIFI_PID_DIR",
-            "provided" : true,
-            "sensitive" : false,
-            "value" : "/opt/nifi/nifi-current/run"
-          }, {
             "name" : "CONFLUENCE_SPACE_KEY",
             "provided" : true,
             "sensitive" : false,
@@ -8737,49 +8455,14 @@
             "sensitive" : false,
             "value" : "1"
           }, {
-            "name" : "HOME",
-            "provided" : true,
-            "sensitive" : false,
-            "value" : "/home/nifi"
-          }, {
-            "name" : "PATH",
-            "provided" : true,
-            "sensitive" : false,
-            "value" : "/usr/lib/jvm/jdk-21.0.3-bellsoft-x86_64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-          }, {
-            "name" : "FLOW_FILE",
-            "provided" : true,
-            "sensitive" : false,
-            "value" : "custom-flows/flow.json.gz"
-          }, {
-            "name" : "RESOURCE_STORAGE_FOLDER",
-            "provided" : true,
-            "sensitive" : false,
-            "value" : "/temp_source_storage"
-          }, {
             "name" : "ACTIVEMQ_PASSWORD",
             "provided" : true,
             "sensitive" : true
-          }, {
-            "name" : "CONFLUENCE_URL",
-            "provided" : true,
-            "sensitive" : false,
-            "value" : "https://exadel.atlassian.net/wiki"
           }, {
             "name" : "GITLAB_PROJECT_NUMBER",
             "provided" : true,
             "sensitive" : false,
             "value" : "980"
-          }, {
-            "name" : "NIFI_WEB_HTTPS_PORT",
-            "provided" : true,
-            "sensitive" : false,
-            "value" : "8443"
-          }, {
-            "name" : "JIRA_PROJECT_ID",
-            "provided" : true,
-            "sensitive" : false,
-            "value" : "first-jira-project"
           }, {
             "name" : "NIFI_REDIS_HOST",
             "provided" : true,
@@ -8791,40 +8474,25 @@
             "sensitive" : false,
             "value" : "/opt/nifi/nifi-current"
           }, {
+            "name" : "BITBUCKET_PROJECT_ID",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "first-bitbucket-project"
+          }, {
             "name" : "LANG",
             "provided" : true,
             "sensitive" : false,
             "value" : "en_US.UTF-8"
-          }, {
-            "name" : "JAVA_HOME",
-            "provided" : true,
-            "sensitive" : false,
-            "value" : "/usr/lib/jvm/jdk-21.0.3-bellsoft-x86_64"
-          }, {
-            "name" : "NIFI_BASE_DIR",
-            "provided" : true,
-            "sensitive" : false,
-            "value" : "/opt/nifi"
           }, {
             "name" : "GITLAB_ACCESS_TOKEN",
             "provided" : true,
             "sensitive" : false,
             "value" : "glpat-zLTBttNrTTCKg_j-nfJe"
           }, {
-            "name" : "JIRA_SCHEDULER_CRON",
-            "provided" : true,
-            "sensitive" : false,
-            "value" : "0 0 8 * * ?"
-          }, {
             "name" : "NIFI_JVM_DEBUGGER",
             "provided" : true,
             "sensitive" : false,
             "value" : "false"
-          }, {
-            "name" : "NIFI_SENSITIVE_PROPS_KEY",
-            "provided" : true,
-            "sensitive" : false,
-            "value" : "'12345678901234567890A'"
           }, {
             "name" : "JIRA_URL",
             "provided" : true,
@@ -8846,30 +8514,140 @@
             "sensitive" : false,
             "value" : "zookeeper:2181"
           }, {
-            "name" : "GITLAB_URL",
+            "name" : "GITLAB_SCHEDULER_CRON",
             "provided" : true,
             "sensitive" : false,
-            "value" : "https://git.exadel.com"
+            "value" : "0 0 8 * * ?"
+          }, {
+            "name" : "CONFLUENCE_SCHEDULER_CRON",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "0 0 8 * * ?"
+          }, {
+            "name" : "ACTIVEMQ_USERNAME",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "artemis_user"
+          }, {
+            "name" : "OLDPWD",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "/opt/nifi/nifi-current/bin"
+          }, {
+            "name" : "BITBUCKET_URL",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "https://api.bitbucket.org"
+          }, {
+            "name" : "NIFI_LOG_DIR",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "/opt/nifi/nifi-current/logs"
+          }, {
+            "name" : "BITBUCKET_SCHEDULER_CRON",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "0 0 8 * * ?"
+          }, {
+            "name" : "JIRA_USER",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "xurshid.djurayev@gmail.com"
+          }, {
+            "name" : "BITBUCKET_PROJECT_SLUG",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "slug"
+          }, {
+            "name" : "NIFI_PID_DIR",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "/opt/nifi/nifi-current/run"
+          }, {
+            "name" : "HOME",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "/home/nifi"
+          }, {
+            "name" : "PATH",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "/usr/lib/jvm/jdk-21.0.3-bellsoft-x86_64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+          }, {
+            "name" : "FLOW_FILE",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "custom-flows/flow.json.gz"
+          }, {
+            "name" : "RESOURCE_STORAGE_FOLDER",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "/temp_source_storage"
+          }, {
+            "name" : "CONFLUENCE_URL",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "https://exadel.atlassian.net/wiki"
+          }, {
+            "name" : "NIFI_WEB_HTTPS_PORT",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "8443"
+          }, {
+            "name" : "JIRA_PROJECT_ID",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "first-jira-project"
+          }, {
+            "name" : "BITBUCKET_PROJECT_OWNER",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "owner"
+          }, {
+            "name" : "JAVA_HOME",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "/usr/lib/jvm/jdk-21.0.3-bellsoft-x86_64"
+          }, {
+            "name" : "NIFI_BASE_DIR",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "/opt/nifi"
+          }, {
+            "name" : "JIRA_SCHEDULER_CRON",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "0 0 8 * * ?"
+          }, {
+            "name" : "NIFI_SENSITIVE_PROPS_KEY",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "'12345678901234567890A'"
+          }, {
+            "name" : "BITBUCKET_ACCESS_TOKEN",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "bitbucket_access_token-here"
           }, {
             "name" : "NIFI_CLUSTER_NODE_PROTOCOL_PORT",
             "provided" : true,
             "sensitive" : false,
             "value" : "8082"
           }, {
-            "name" : "_",
+            "name" : "GITLAB_URL",
             "provided" : true,
             "sensitive" : false,
-            "value" : "bin/nifi.sh"
+            "value" : "https://git.exadel.com"
           }, {
             "name" : "GITLAB_PROJECT_ID",
             "provided" : true,
             "sensitive" : false,
             "value" : "first-gitlab-project"
           }, {
-            "name" : "GITLAB_SCHEDULER_CRON",
+            "name" : "_",
             "provided" : true,
             "sensitive" : false,
-            "value" : "0 0 8 * * ?"
+            "value" : "bin/nifi.sh"
           } ],
           "synchronized" : true
         }
